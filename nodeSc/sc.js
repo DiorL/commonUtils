@@ -12,7 +12,6 @@ const fWrite = fs.createWriteStream(path.join(__dirname,'../README.md'))
 
 fRead.on('end',()=>{
   console.log('end')
-  enableWriteIndex = false
 })
 
 let objReadline = readline.createInterface({
