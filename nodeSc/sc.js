@@ -4,7 +4,7 @@ const readline = require('readline');
 const os = require('os');
 
 let readFir = `# commonUtils
-commonUtils for project
+commonUtils for project  
 ！！！注意：每次添加完函数需执行upReadme  `
 
 const fRead = fs.createReadStream(path.join(__dirname,'../js/utils.js'))
