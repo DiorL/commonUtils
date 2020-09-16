@@ -1,4 +1,4 @@
-//处理千分符
+  //rdme  处理千分符
 // val待处理数据 digits保留几位小数
 export const moneyFixed = (val, digits = 0) => {
   let num = 0;
@@ -34,7 +34,7 @@ export const moneyFixed = (val, digits = 0) => {
 };
 
 
-//千分符
+//rdme  千分符
 function numFormat(num){
   var res=num.toString().replace(/\d+/, function(n){ // 先提取整数部分
        return n.replace(/(\d)(?=(\d{3})+$)/g,function($1){
@@ -44,7 +44,7 @@ function numFormat(num){
   return res;
 }
 
-
+//rdme 处理小数 如果是整数,取整,如果是小数,保留两位
 /**
  * 处理小数 如果是整数,取整,如果是小数,保留两位
  * 233->233
@@ -56,7 +56,7 @@ function cutNum(v: number, dg: number = 2): number {
   return String(v).includes(".") ? Number(v.toFixed(dg)) : v;
 }
 
-//不丢失精度 取余
+//rdme 不丢失精度 取余
 export const accMod = (arg1, arg2) => {
   // 修正取余精度
   const ACCURACY_CORRECT = 10000000000;
@@ -65,7 +65,7 @@ export const accMod = (arg1, arg2) => {
   );
 };
 
-//不丢失精度乘法
+//rdme  不丢失精度乘法
 export const accMul = (arg1 = 0, arg2 = 0) => {
   let m = 0;
   let s1 = arg1.toString();
@@ -82,7 +82,7 @@ export const accMul = (arg1 = 0, arg2 = 0) => {
   );
 };
 
-//不丢失精度加法
+//rdme  不丢失精度加法
 export const addNum = (num1, num2) => {
   let sq1 = 0;
   let sq2 = 0;
@@ -101,7 +101,7 @@ export const addNum = (num1, num2) => {
   return (num1 * m + num2 * m) / m;
 };
 
-//不丢失精度减法
+//rdme  不丢失精度减法
 export const accSub = (num1, num2) => {
   let r1 = 0;
   let r2 = 0;
@@ -123,7 +123,7 @@ export const accSub = (num1, num2) => {
 };
 
 
-//金额转汉字
+//rdme  金额转汉字
 export const convertCurrency = money => {
   //汉字的数字
   let cnNums = new Array(
@@ -222,3 +222,9 @@ export const convertCurrency = money => {
   }
   return chineseStr;
 };
+
+//rdme  去左右空格;
+function trim(s){
+  return s.replace(/(^\s*)|(\s*$)/g, "");
+}
+

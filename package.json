@@ -4,7 +4,8 @@
   "description": "commonUtils for project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upReadme": "node ./nodeSc/sc.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/DiorL/commonUtils/issues"
   },
-  "homepage": "https://github.com/DiorL/commonUtils#readme"
+  "homepage": "https://github.com/DiorL/commonUtils#readme",
+  "dependencies": {
+    "cross-env": "^7.0.2"
+  }
 }
