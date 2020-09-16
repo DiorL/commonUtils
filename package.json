@@ -1,0 +1,20 @@
+{
+  "name": "commonUtils",
+  "version": "1.0.0",
+  "description": "commonUtils for project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiorL/commonUtils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiorL/commonUtils/issues"
+  },
+  "homepage": "https://github.com/DiorL/commonUtils#readme"
+}
